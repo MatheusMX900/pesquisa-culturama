@@ -50,14 +50,14 @@
                 <br>
 
                 <label for="maritalStatus">Estado Cívil:</label>
-                <select name="maritalStatus">
+                <select name="maritalStatus" required>
                     <option value="casado">Casado</option>
                     <option value="solteiro">solteiro</option>
                     <option value="divorciado">Divorciado</option>
                     <option value="uniaoEstavel">União Estavel</option>
                 </select>
                 <br>
-                
+
                 <label for="userState">Estado:</label>
                 <select name="userState" required>
                 <option value="Acre">Acre</option>
@@ -87,8 +87,11 @@
                 <option value="São Paulo">São Paulo</option>
                 <option value="Sergipe">Sergipe</option>
                 <option value="Tocantins">Tocantins</option>
+            </select>
+            <br>
 
-                </select>
+            <label for="city">Cidade:</label>
+            <input type="text" name="city" placeholder="Sua Cidade...">
 
             </fieldset>
 
