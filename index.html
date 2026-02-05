@@ -15,26 +15,131 @@
                 <!-- DADOS PESSOAIS -->
 
                 <legend>Dados Pessoais</legend>
-                <label for="userName">Nome:</label>
-                <input type="text" name="userName" required>
+                <label for="name">Nome:</label>
+                <input id="name" name="userName" required>
                 <br>
-                <label for="userAge">Idade:</label>
-                <input type="number" name="userAge" min="12" max="100" required>
+                <label for="age">Idade:</label>
+                <input id="age" type="number" name="userAge" min="12" max="100" required>
                 <br>
                 <label for="birthDate">Data de Nascimento:</label>
-                <input type="date" name="birthDate">
+                <input id="birthDate" type="date" name="birthDate">
                 <br>
-                <label for="userEmail">Email</label>
-                <input type="email" name="userEmail" required>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="userEmail" required>
                 <br>
-                <label for="userPhoneNumber">Telefone:</label>
-                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífens">
+                <label for="phone">Telefone:</label>
+                <input id="phone" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífens">
                 <br>
-                <label for="userImage">Upload de Imagem:</label>
-                <input type="file" accept="image/*" name="userImage">
+                <label for="file">Upload de Imagem:</label>
+                <input id="file" type="file" accept="image/*" name="userImage">
                 <br>
             </fieldset>
 
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Gênero:</p>
+                <input id="genderFemale" type="radio" name="userGender" value="Feminino">
+                <label for="genderFemale">Feminino</label>
+
+                <input id="genderMale" type="radio" name="userGender" value="Masculino">
+                <label for="genderMale">Masculino</label>
+                
+                <input id="genderNotInformed" type="radio" name="userGender" value="notInFormed">
+                <label for="genderNotInformed">Prefiro não informar</label>
+                <br>
+
+                <label for="marital">Estado Cívil:</label>
+                <select id="marital" name="maritalStatus" required>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">solteiro</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="uniaoEstavel">União Estavel</option>
+                </select>
+                <br>
+
+                <label for="state">Estado:</label>
+                <select id="state" name="userState" required>
+                <option value="acre">Acre</option>
+                <option value="alagoas">Alagoas</option>
+                <option value="amapa">Amapá</option>
+                <option value="amazonas">Amazonas</option>
+                <option value="bahia">Bahia</option>
+                <option value="ceara">Ceará</option>
+                <option value="distrito_Federal">Distrito Federal</option>
+                <option value="espirito_Santo">Espirito Santo</option>
+                <option value="goias">Goiás</option>
+                <option value="maranhao">Maranhão</option>
+                <option value="mato_Grosso_do_Sul">Mato Grosso do Sul</option>
+                <option value="mato_Grosso">Mato Grosso</option>
+                <option value="minas_Gerais">Minas Gerais</option>
+                <option value="para">Pará</option>
+                <option value="paraiba">Paraíba</option>
+                <option value="parana">Paraná</option>
+                <option value="pernambuco">Pernambuco</option>
+                <option value="piaui">Piauí</option>
+                <option value="rio_de_Janeiro">Rio de Janeiro</option>
+                <option value="rio_Grande_do_Norte">Rio Grande do Norte</option>
+                <option value="rio_Grande_do_Sul">Rio Grande do Sul</option>
+                <option value="rondonia">Rondônia</option>
+                <option value="roraima">Roraima</option>
+                <option value="santa_Catarina">Santa Catarina</option>
+                <option value="sao_Paulo">São Paulo</option>
+                <option value="sergipe">Sergipe</option>
+                <option value="tocantins">Tocantins</option>
+            </select>
+            <br>
+
+            <label for="city">Cidade:</label>
+            <input id="city" type="text" id="userCity" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza">
+            </fieldset>
+
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes Sociais:</p>
+                <input id="instagram" type="checkbox" name="social" value="instagram">
+                <label for="instagram">instagram</label>
+                <br>
+                <input id="facebook" type="checkbox" name="social" value="facebook">
+                <label for="facebook">facebook </label>
+                <br>
+                <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                <label for="linkedin">LinkedIn </label>
+                <br>
+                <input id="x" type="checkbox" name="social" value="x">
+                <label for="x">X (Twitter)</label>
+                <br>
+
+                <!--<p>Estilo Musical</p>
+                <input id="rock" type="checkbox" name="music" value="rock">
+                <label for="rock">Rock</label>
+                <br>
+                <input id="pop" type="checkbox" name="music" value="pop">
+                <label for="pop">Pop</label>
+                <br>
+                <input id="hipHop" type="checkbox" name="music" value="hipHop">
+                <label for="hipHop">Hip Hop</label>
+                <br>
+                <input id="samba" type="checkbox" name="music" value="samba">
+                <label for="samba">Samba</label>
+                <br>
+                <input id="forro" type="checkbox" name="music" value="forro">
+                <label for="forro">Forró</label>
+                <br>
+                <label for="other">Outros</label>
+                <input id="other"  name="otherMusic">  -->
+
+                <label for="musicStyle">Estilo Musical:</label>
+                <input list="styleType" id="musicStyle" type="text" name="userMusicStyle">
+                <datalist id="styleType">
+                    <option value="Rock">
+                    <option value="Pop">
+                    <option value="Hip Hop">
+                    <option value="Samba">
+                    <option value="Forró">
+                </datalist>
+                
+            </fieldset>
 
             <button type="submit">Enviar</button>
         </form>
