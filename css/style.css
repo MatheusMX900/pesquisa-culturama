@@ -95,10 +95,11 @@ textarea:valid {
 }
 
 button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
     padding: 10px 20px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
@@ -107,18 +108,21 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #45a049;
+    color: white;
 }
 
 button[type="reset"] {
-    background-color: #f44336;
-    color: white;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
     padding: 10px 20px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button[type="reset"]:hover {
     background-color: #da190b;
+    color: white;
 }
 
