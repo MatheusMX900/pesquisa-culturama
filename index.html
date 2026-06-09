@@ -38,10 +38,12 @@
                     <input id="email" type="email" name="userEmail" required>
                     <br>
                     <label for="phone">Telefone:</label>
-                    <input id="phone" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífens">
+                    <input id="phone" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífens" aria-describedby="phoneHelp">
+                    <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + número sem espaços ou hífens</small>
                     <br>
                     <label for="file">Upload de Imagem:</label>
-                    <input id="file" type="file" accept="image/*" name="userImage">
+                    <input id="file" type="file" accept="image/*" name="userImage" aria-describedby="imageHelp">
+                    <small id="imageHelp">Envie uma foto no formato png ou jpeg.</small>
                     <br>
                 </fieldset>
 
@@ -119,25 +121,6 @@
                     <input id="x" type="checkbox" name="social" value="x">
                     <label for="x">X (Twitter)</label>
                     <br>
-
-                    <!--<p>Estilo Musical</p>
-                    <input id="rock" type="checkbox" name="music" value="rock">
-                    <label for="rock">Rock</label>
-                    <br>
-                    <input id="pop" type="checkbox" name="music" value="pop">
-                    <label for="pop">Pop</label>
-                    <br>
-                    <input id="hipHop" type="checkbox" name="music" value="hipHop">
-                    <label for="hipHop">Hip Hop</label>
-                    <br>
-                    <input id="samba" type="checkbox" name="music" value="samba">
-                    <label for="samba">Samba</label>
-                    <br>
-                    <input id="forro" type="checkbox" name="music" value="forro">
-                    <label for="forro">Forró</label>
-                    <br>
-                    <label for="other">Outros</label>
-                    <input id="other"  name="otherMusic">  -->
 
                     <label for="musicStyle">Estilo Musical:</label>
                     <input list="styleType" id="musicStyle" type="text" name="userMusicStyle">
